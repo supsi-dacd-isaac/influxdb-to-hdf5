@@ -1,0 +1,31 @@
+{
+  "exporting_parameters":
+  [
+    {
+      "host": "host.example.com",
+      "port": 8086,
+      "db": "db_name",
+      "user": "username",
+      "password": "xxx",
+      "epoch": "s",
+      "query": "SELECT mean(value) AS mean, sum(flag) AS flag FROM meteo WHERE stand='TSGAB' AND signal='Gglob_hor' AND time>='2017-03-10T12:00:00Z' AND time<='2017-03-10T15:10:00Z' GROUP BY time(10m), stand, signal",
+      "hdf5_file": "hdf5/data_tags.h5",
+      "chunk_factor": "0.5",
+      "compression_type": "gzip",
+      "compression_level": "5"
+    },
+    {
+      "host": "host.example.com",
+      "port": 8086,
+      "db": "db_name",
+      "user": "username",
+      "password": "xxx",
+      "epoch": "s",
+      "query": "SELECT mean(value) AS mean, sum(flag) AS flag FROM meteo WHERE stand='TSGAB' AND signal='Gglob_hor' AND time>='2017-03-10T12:00:00Z' AND time<='2017-03-10T15:10:00Z' GROUP BY time(10m)",
+      "hdf5_file": "hdf5/data_no_tags.h5",
+      "chunk_factor": "0.5",
+      "compression_type": "gzip",
+      "compression_level": "5"
+    }
+  ]
+}
