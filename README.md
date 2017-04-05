@@ -9,7 +9,7 @@ Script to gather times-series from an InfluxDB server (https://www.influxdata.co
 * jsonschema>=2.6.0
 
 **Usage:** 
-<pre>bridge.py -c conf/example.json</pre>
+<pre>python3 bridge.py -c conf/example.json</pre>
 
 **Configuration of a single HDF5 file:** 
 
